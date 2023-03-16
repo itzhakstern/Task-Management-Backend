@@ -69,14 +69,5 @@ export class TasksService {
     task.status = status;
     await this.tasksRepository.save(task);
     return task;
-    // const updatedTask = await this.tasksRepository.update(
-    //   { id, user },
-    //   {
-    //     status: status,
-    //   },
-    // );
-    // if (updatedTask.affected === 0) {
-    //   throw new NotFoundException(`Task with ID "${id}" not found`);
-    // }
   }
 }
